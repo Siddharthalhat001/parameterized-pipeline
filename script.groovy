@@ -1,13 +1,14 @@
-def buildApp()
-{
-	echo "Building the Application"
-}
-def testApp()
-{
-	echo "Testing the Application"
-}
-def deployApp()
-{
-	echo "Deploying the Application"
-	echo "Deploying Version ${params.Version}"
-}
+def buildApp() {
+    echo 'building the application...'
+} 
+
+def testApp() {
+    echo 'testing the application...'
+} 
+
+def deployApp() {
+    echo 'deplying the application...'
+    echo "deploying version ${params.VERSION}"
+} 
+
+return this
